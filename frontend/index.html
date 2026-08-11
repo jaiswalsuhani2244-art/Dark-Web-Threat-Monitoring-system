@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Web Threat Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+
+    <div class="logo">
+        <h2>🛡 Threat Monitor</h2>
+        <p>Cyber Security</p>
+    </div>
+
+    <ul class="menu">
+
+    <li class="active" onclick="location.href='index.html'">
+        <span>🏠</span>
+        Dashboard
+    </li>
+
+    <li onclick="location.href='threat-feed.html'">
+        <span>📡</span>
+        Threat Feed
+    </li>
+
+    <li onclick="location.href='alerts.html'">
+        <span>🚨</span>
+        Alerts
+    </li>
+
+    <li onclick="location.href='analytics.html'">
+        <span>📊</span>
+        Analytics
+    </li>
+
+    <li onclick="location.href='reports.html'">
+        <span>📄</span>
+        Reports
+    </li>
+
+    <li onclick="location.href='settings.html'">
+        <span>⚙</span>
+        Settings
+    </li>
+
+</ul>
+
+    <div class="admin-panel" id="sidebarAdmin">
+    👤 Admin
+</div>
+
+</div>
+    <div class="main-content">
+<div id="alert-box" class="alert-box">
+    ⚠ New High Risk Threat Detected
+</div>
+        <div class="top-navbar">
+
+    <div class="page-title">
+        <h1>Dark Web Threat Dashboard</h1>
+        <p>Real-time Cyber Threat Intelligence</p>
+    </div>
+
+    <div class="top-right">
+
+        <input
+            type="text"
+            placeholder="🔍 Search threats..."
+            class="search-box">
+
+        <div class="live-time" id="liveTime">
+            Loading...
+        </div>
+
+        <div class="profile">
+            👤 Admin
+        </div>
+
+    </div>
+
+</div>
+
+        <div class="dashboard-layout">
+
+            <!-- LEFT PANEL -->
+            <div class="left-panel" id="dashboard">
+
+                <div class="cards">
+
+                  <div class="card">
+    <h3>Total Threats</h3>
+    <p id="totalThreats">0</p>
+</div>
+
+<div class="card">
+    <h3>High Risk Alerts</h3>
+    <p id="highRiskAlerts">0</p>
+</div>
+
+<div class="card">
+    <h3>Dark Web Mentions</h3>
+    <p id="darkWebMentions">0</p>
+</div>
+
+<div class="card">
+    <h3>Active Investigations</h3>
+    <p id="activeInvestigations">0</p>
+</div>
+
+                </div>
+
+                <h2 class="section-title">Recent Threat Feed</h2>
+
+                <div class="threat-feed" id="feed">
+
+                    <div class="threat-item high">
+                        <h3>Ransomware Leak Detected</h3>
+                        <p>Source: Dark Forum</p>
+                    </div>
+
+                    <div class="threat-item medium">
+                        <h3>Credit Card Data Sale</h3>
+                        <p>Source: Black Market</p>
+                    </div>
+
+                    <div class="threat-item low">
+                        <h3>Phishing Database Shared</h3>
+                        <p>Source: Telegram Channel</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT PANEL -->
+            <div class="right-panel">
+
+                <h2 class="section-title">Threat Statistics</h2>
+
+                <div class="chart-box" id="analytics">
+                    <canvas id="threatChart"></canvas>
+                </div>
+
+                <h2 class="section-title">Threat Activity Log</h2>
+
+                <table class="threat-table" id="reports">
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Threat</th>
+                        <th>Risk Level</th>
+                        <th>Source</th>
+                    </tr>
+
+                    <tr>
+                        <td>001</td>
+                        <td>Ransomware Leak</td>
+                        <td class="high-text">High</td>
+                        <td>Dark Forum</td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>Credit Card Dump</td>
+                        <td class="medium-text">Medium</td>
+                        <td>Black Market</td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>Phishing Database</td>
+                        <td class="low-text">Low</td>
+                        <td>Telegram</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+   
+</body>
+</html>

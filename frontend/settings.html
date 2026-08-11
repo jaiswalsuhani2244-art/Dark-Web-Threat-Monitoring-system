@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        <h2>🛡 Threat Monitor</h2>
+        <p>Cyber Security</p>
+    </div>
+
+    <ul class="menu">
+
+        <li onclick="location.href='index.html'">🏠 Dashboard</li>
+
+        <li onclick="location.href='threatfeed.html'">📡 Threat Feed</li>
+
+        <li onclick="location.href='alerts.html'">🚨 Alerts</li>
+
+        <li onclick="location.href='analytics.html'">📊 Analytics</li>
+
+        <li onclick="location.href='reports.html'">📄 Reports</li>
+
+        <li class="active">⚙ Settings</li>
+
+    </ul>
+
+    <div class="admin-panel">
+        👤 Admin
+    </div>
+
+</div>
+
+
+<!-- ================= MAIN ================= -->
+
+<div class="main-content">
+
+<div class="top-navbar">
+
+<div class="page-title">
+
+<h1>Settings</h1>
+
+<p>Configure your Threat Monitoring Dashboard</p>
+
+</div>
+
+<div class="top-right">
+
+<input
+type="text"
+placeholder="🔍 Search Setting..."
+class="search-box">
+
+<div class="live-time" id="liveTime"></div>
+
+<div class="profile">
+
+👤 Admin
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= SETTINGS ================= -->
+
+<div class="settings-grid">
+
+<div class="setting-card">
+
+<h3>🌙 Theme</h3>
+
+<p id="themeStatus">Dark Mode Enabled</p>
+
+<button id="themeBtn">Change Theme</button>
+
+</div>
+
+
+<div class="setting-card">
+
+<h3>🔔 Notifications</h3>
+
+<p id="notificationStatus">Email Alerts Active</p>
+
+<button id="notificationBtn">Manage</button>
+
+</div>
+
+
+<div class="setting-card">
+
+<h3>🔐 Password</h3>
+
+<p id="passwordStatus">Last Updated 21 Days Ago</p>
+<button id="passwordBtn">Change Password</button>
+
+</div>
+
+
+<div class="setting-card">
+
+<h3>👤 Account</h3>
+
+<p id="accountStatus">Administrator</p>
+
+<button id="profileBtn">Edit Profile</button>
+
+</div>
+
+
+<div class="setting-card">
+
+<h3>📊 Auto Reports</h3>
+
+<p id="reportStatus">Weekly Reports Enabled</p>
+
+<button id="reportBtn">Configure</button>
+
+</div>
+
+
+<div class="setting-card">
+
+<h3>💾 Backup</h3>
+
+<p id="backupStatus">Automatic Cloud Backup</p>
+
+<button id="backupBtn">Run Backup</button>
+
+</div>
+
+
+<div class="setting-card">
+
+<h3>🌍 Threat Sources</h3>
+
+<p id="sourceStatus">14 Sources Connected</p>
+
+<button id="sourceBtn">Manage Sources</button>
+
+</div>
+
+
+<div class="setting-card">
+
+<h3>🛡 Firewall</h3>
+
+<p id="firewallStatus">Protection Enabled</p>
+
+<button id="firewallBtn">Settings</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

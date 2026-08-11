@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h2>🛡 Threat Monitor</h2>
+            <p>Cyber Security</p>
+        </div>
+
+        <ul class="menu">
+
+            <li onclick="location.href='index.html'">
+                <span>🏠</span> Dashboard
+            </li>
+
+            <li onclick="location.href='threat-feed.html'">
+                <span>📡</span> Threat Feed
+            </li>
+
+            <li onclick="location.href='alerts.html'">
+                <span>🚨</span> Alerts
+            </li>
+
+            <li onclick="location.href='analytics.html'">
+                <span>📊</span> Analytics
+            </li>
+
+            <li class="active">
+                <span>📄</span> Reports
+            </li>
+
+            <li onclick="location.href='settings.html'">
+                <span>⚙️</span> Settings
+            </li>
+
+        </ul>
+
+        <div class="admin-panel">
+            👤 Admin
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <div class="main-content">
+
+        <!-- Top Navbar -->
+
+        <div class="top-navbar">
+
+            <div class="page-title">
+
+                <h1>Security Reports</h1>
+
+                <p>Generate and review cybersecurity monitoring reports</p>
+
+            </div>
+
+            <div class="top-right">
+
+                <input
+                    type="text"
+                    class="search-box"
+                    placeholder="🔍 Search Reports">
+
+                <div class="live-time" id="liveTime">
+                    Loading...
+                </div>
+
+                <div class="profile">
+                    👤 Admin
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Summary Cards -->
+
+        <div class="feed-cards">
+
+            <div class="feed-card">
+                <h3>Daily Reports</h3>
+                <p>18</p>
+            </div>
+
+            <div class="feed-card">
+                <h3>Weekly Reports</h3>
+                <p>07</p>
+            </div>
+
+            <div class="feed-card">
+                <h3>Monthly Reports</h3>
+                <p>03</p>
+            </div>
+
+            <div class="feed-card">
+                <h3>Archived</h3>
+                <p>64</p>
+            </div>
+
+        </div>
+
+
+
+        <!-- Report Table -->
+
+        <h2 class="section-title">Generated Reports</h2>
+
+        <table class="threat-table" id="reportsTable">
+
+            <tr>
+
+                <th>Report ID</th>
+
+                <th>Report Name</th>
+
+                <th>Date</th>
+
+                <th>Status</th>
+
+                <th>Download</th>
+
+            </tr>
+
+           
+
+        </table>
+
+
+
+        <!-- Export Buttons -->
+
+        <div class="report-buttons">
+
+            <button class="report-btn" id="pdfBtn">
+               📄 Export PDF
+            </button>
+
+      <button class="report-btn" id="excelBtn">
+           📊 Export Excel
+        </button>
+
+        <button class="report-btn" id="printBtn">
+             🖨 Print Report
+         </button>
+
+        </div>
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

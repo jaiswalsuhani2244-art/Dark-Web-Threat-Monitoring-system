@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Feed</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h2>🛡 Threat Monitor</h2>
+            <p>Cyber Security</p>
+        </div>
+
+        <ul class="menu">
+
+            <li onclick="location.href='index.html'">
+                <span>🏠</span>
+                Dashboard
+            </li>
+
+            <li class="active">
+                <span>📡</span>
+                Threat Feed
+            </li>
+
+            <li onclick="location.href='alerts.html'">
+                <span>🚨</span>
+                Alerts
+            </li>
+
+            <li onclick="location.href='analytics.html'">
+                <span>📊</span>
+                Analytics
+            </li>
+
+            <li onclick="location.href='reports.html'">
+                <span>📄</span>
+                Reports
+            </li>
+
+            <li onclick="location.href='settings.html'">
+                <span>⚙</span>
+                Settings
+            </li>
+
+        </ul>
+
+        <div class="admin-panel">
+            👤 Admin
+        </div>
+
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <div class="main-content">
+
+        <!-- Top Navbar -->
+
+        <div class="top-navbar">
+
+            <div class="page-title">
+                <h1>Threat Feed</h1>
+                <p>Live monitoring of cyber threats from multiple sources</p>
+            </div>
+
+            <div class="top-right">
+
+               <input
+    type="text"
+    id="threatSearch"
+    class="search-box"
+    placeholder="🔍 Search Threat">
+
+
+<select id="riskFilter" class="search-box">
+
+    <option value="all">All Risk</option>
+
+    <option value="high">High Risk</option>
+
+    <option value="medium">Medium Risk</option>
+
+    <option value="low">Low Risk</option>
+
+</select>
+
+                <div class="live-time" id="liveTime">
+                    Loading...
+                </div>
+
+                <div class="profile">
+                    👤 Admin
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Summary Cards -->
+
+        <div class="feed-cards">
+
+            <div class="feed-card">
+                <h3>Today's Threats</h3>
+                <p>23</p>
+            </div>
+
+            <div class="feed-card">
+                <h3>High Risk</h3>
+                <p>7</p>
+            </div>
+
+            <div class="feed-card">
+                <h3>Active Sources</h3>
+                <p>14</p>
+            </div>
+
+            <div class="feed-card">
+                <h3>Updated</h3>
+                <p>2 min</p>
+            </div>
+
+        </div>
+
+        <!-- Threat Feed -->
+
+        <h2 class="section-title">Latest Threats</h2>
+
+        <div class="threat-feed" id="threatFeed">
+
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

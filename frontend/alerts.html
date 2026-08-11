@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <h2>🛡 Threat Monitor</h2>
+            <p>Cyber Security</p>
+        </div>
+
+        <ul class="menu">
+
+            <li onclick="location.href='index.html'">
+                <span>🏠</span>
+                Dashboard
+            </li>
+
+            <li onclick="location.href='threat-feed.html'">
+                <span>📡</span>
+                Threat Feed
+            </li>
+
+            <li class="active">
+                <span>🚨</span>
+                Alerts
+            </li>
+
+            <li onclick="location.href='analytics.html'">
+                <span>📊</span>
+                Analytics
+            </li>
+
+            <li onclick="location.href='reports.html'">
+                <span>📄</span>
+                Reports
+            </li>
+
+            <li onclick="location.href='settings.html'">
+                <span>⚙️</span>
+                Settings
+            </li>
+
+        </ul>
+
+        <div class="admin-panel">
+            👤 Admin
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+        <div class="top-navbar">
+
+            <div class="page-title">
+                <h1>Security Alerts</h1>
+                <p>Monitor critical security events in real time</p>
+            </div>
+
+            <div class="top-right">
+
+                <input
+                    type="text"
+                    class="search-box"
+                    placeholder="🔍 Search Alerts">
+
+                <div class="live-time" id="liveTime">
+                    Loading...
+                </div>
+
+                <div class="profile">
+                    👤 Admin
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Alert Summary Cards -->
+
+        <div class="feed-cards">
+
+            <div class="feed-card">
+                <h3>Critical Alerts</h3>
+                <p>09</p>
+            </div>
+
+            <div class="feed-card">
+                <h3>High Alerts</h3>
+                <p>18</p>
+            </div>
+
+            <div class="feed-card">
+                <h3>Resolved</h3>
+                <p>42</p>
+            </div>
+
+            <div class="feed-card">
+                <h3>Pending</h3>
+                <p>11</p>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Recent Security Alerts</h2>
+<div class="threat-feed" id="alertsContainer">
+
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
